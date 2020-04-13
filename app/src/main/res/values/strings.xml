@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">SIH_Location</string>
+    <string name="map_key" translatable="false">AIzaSyD1KTk5E5kT6q1z-I_POoO8qKsCpJw9eN8</string>
+
+    <string name="title_activity_next">NextActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+</resources>

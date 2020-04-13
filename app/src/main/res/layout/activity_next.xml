@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0099cc"
+    tools:context=".NextActivity">
+
+    <!-- The primary full-screen view. This can be replaced with whatever view
+         is needed to present your content, e.g. VideoView, SurfaceView,
+         TextureView, etc. -->
+    <TextView
+        android:id="@+id/fullscreen_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:keepScreenOn="true"
+        android:text="@string/dummy_content"
+        android:textColor="#33b5e5"
+        android:textSize="50sp"
+        android:textStyle="bold" />
+
+    <!-- This FrameLayout insets its children based on system windows using
+         android:fitsSystemWindows. -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/location"
+        android:fitsSystemWindows="true">
+
+        <LinearLayout
+            android:id="@+id/fullscreen_content_controls"
+            style="?metaButtonBarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:background="@color/black_overlay"
+            android:orientation="horizontal"
+            tools:ignore="UselessParent">
+
+            <Button
+                android:id="@+id/dummy_button"
+                style="?metaButtonBarButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="toPortfolio"
+                android:text="Developed by Ritwik Sharma"
+                android:textColor="#FF5722"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:gravity="center"
+        android:text="Detailed Information"
+        android:textAllCaps="true"
+        android:textColor="#FFC107"
+        android:textSize="45sp"
+        android:textStyle="bold"
+        app:fontFamily="@font/patua_one" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="180dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="70dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/addressText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="50dp"
+                android:text="Address"
+                android:textColor="#FAF9F6"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/postalCodeText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="Postal Code"
+                android:textColor="#F4F2F2"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/localityText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="Locality"
+                android:textColor="#FBF9F9"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/districtText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="District"
+                android:textColor="#F6F3F3"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/cityText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="City"
+                android:textColor="#F6F4F4"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/stateText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="State"
+                android:textColor="#FAF7F7"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/countryText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="Country"
+                android:textColor="#FBFAFA"
+                android:textSize="18sp" />
+
+
+            <TextView
+                android:id="@+id/latitudeText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="Latitude"
+                android:textColor="#FBF7F7"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/longitudeText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="Longitude"
+                android:textColor="#FAF7F7"
+                android:textSize="18sp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="207dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="70dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/addressId"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="27dp"
+                android:maxLength="20"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/postalCodeId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:textColor="#FBFBFB"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/localityId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:textColor="#F8F7F7"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/districtId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:textColor="#F8F5F5"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/cityId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:textColor="#F8F5F5"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/stateId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:textColor="#F8F4F4"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/countryId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:textColor="#F6F2F2"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/latitudeId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:textColor="#F6F2F2"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/longitudeId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:textColor="#ECE1E1"
+                android:textSize="18sp" />
+
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+</FrameLayout>
